@@ -38,7 +38,7 @@
 }
 
 .policy-list {
-  max-width: 90%; /* Compress policy list slightly more */
+  max-width: 89%; /* Compress policy list slightly more */
   margin: 0 auto; /* Centers it */
   padding: 1rem 2rem; /* Slightly smaller padding */
   text-align: justify;
@@ -46,11 +46,13 @@
 
 .uic {
   width: 100%;
-  height: 500px; /* Slightly taller */
+  height: 600px; /* Slightly taller */
   position: relative;
   object-fit: cover;
   overflow: hidden;
   display: flex;
+  left: 0%;
+  right: 1%;
   align-items: center;
   justify-content: center;
 }
