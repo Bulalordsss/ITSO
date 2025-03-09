@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2.5rem; 
+  padding: 1rem 2.5rem; /* Slightly bigger padding */
   background-color: #ff6b88;
   position: fixed;
   top: 0;
@@ -14,13 +14,13 @@
 
 .content-placeholder {
   color: #FF92B4;
-  font-size: 2rem; 
+  font-size: 2rem; /* Increased */
   text-align: justify;
 }
 
 .policy-intro {
   color: #FF92B4;
-  font-size: 2rem; 
+  font-size: 2rem; /* Increased */
   text-align: justify;
 }
 
