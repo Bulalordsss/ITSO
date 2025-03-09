@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2.5rem; /* Slightly bigger padding */
+  padding: 1rem 2.5rem; 
   background-color: #ff6b88;
   position: fixed;
   top: 0;
@@ -14,39 +14,39 @@
 
 .content-placeholder {
   color: #FF92B4;
-  font-size: 2rem; /* Increased */
+  font-size: 2rem; 
   text-align: justify;
 }
 
 .policy-intro {
   color: #FF92B4;
-  font-size: 2rem; /* Increased */
+  font-size: 2rem; 
   text-align: justify;
 }
 
 .policy-list {
   color: #FF92B4;
-  font-size: 2rem; /* Increased */
+  font-size: 2rem; 
   text-align: justify;
 }
 
 .content-placeholder, .policy-intro {
-  max-width: 500%; /* Slightly compressed */
-  margin: 0 auto; /* Centers it */
-  padding: 1.5rem 2rem; /* Adjusted padding */
+  max-width: 500%; 
+  margin: 0 auto; 
+  padding: 1.5rem 2rem; 
   text-align: justify;
 }
 
 .policy-list {
-  max-width: 89%; /* Compress policy list slightly more */
-  margin: 0 auto; /* Centers it */
-  padding: 1rem 2rem; /* Slightly smaller padding */
+  max-width: 89%; 
+  margin: 0 auto; 
+  padding: 1rem 2rem; 
   text-align: justify;
 }
 
 .uic {
   width: 100%;
-  height: 600px; /* Slightly taller */
+  height: 600px; 
   position: relative;
   object-fit: cover;
   overflow: hidden;
@@ -78,7 +78,7 @@
   position: relative;
   text-align: center;
   color: white;
-  font-size: 10rem; /* Bigger title */
+  font-size: 10rem; 
   font-weight: bold;
   z-index: 2;
 }
@@ -89,7 +89,7 @@
 }
 
 .nav-logo {
-  height: 55px; /* Slightly bigger */
+  height: 55px; 
   width: auto;
 }
 
@@ -101,7 +101,7 @@
 .nav-link {
   color: white;
   text-decoration: none;
-  font-size: 1.8rem; /* Increased */
+  font-size: 1.8rem; 
   font-weight: 700;
   padding: 0.75rem 0;
   transition: opacity 0.3s;
@@ -141,11 +141,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem; /* Increased */
+  font-size: 2rem; 
 }
 
 .notification-icon {
-  width: 32px; /* Bigger */
+  width: 32px; 
   height: 32px;
   color: white;
 }
@@ -155,7 +155,7 @@
 }
 
 .profile-circle {
-  width: 55px; /* Increased */
+  width: 55px; 
   height: 55px;
   border-radius: 50%;
   background-color: #e0e0e0;
@@ -171,7 +171,7 @@
   }
 
   .nav-link {
-      font-size: 1.5rem; /* Bigger on smaller screens */
+      font-size: 1.5rem; 
   }
 
   .profile-circle {
@@ -180,7 +180,7 @@
   }
 
   .uic-content {
-      font-size: 4rem; /* Adjusted for smaller screens */
+      font-size: 4rem; 
   }
 }
 
