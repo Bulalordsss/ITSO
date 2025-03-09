@@ -1,163 +1,179 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.75rem 2rem;
-    background-color: #ff6b88;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem; /* Slightly bigger padding */
+  background-color: #ff6b88;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  .content-placeholder {
-    color: #FF92B4;
-  }
-  
-  .policy-intro {
-    color: #FF92B4;
-  }
-  .policy-list {
-    color: #FF92B4;
+.content-placeholder {
+  color: #FF92B4;
+  font-size: 2rem; /* Increased */
+  text-align: justify;
+}
 
-  }
-  .uic {
-    width: 100%;
-    height: 350px; /* Adjust height as needed */
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.policy-intro {
+  color: #FF92B4;
+  font-size: 2rem; /* Increased */
+  text-align: justify;
+}
+
+.policy-list {
+  color: #FF92B4;
+  font-size: 2rem; /* Increased */
+  text-align: justify;
+}
+
+.uic {
+  width: 100%;
+  height: 400px; /* Slightly taller */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .uic img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image fits without distortion */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    filter: grayscale(100%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: grayscale(100%);
 }
 
 .uic-overlay {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    background: rgba(255, 107, 136, 0.5); /* Pink overlay */
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 107, 136, 0.5);
 }
 
 .uic-content {
-    position: relative;
-    text-align: center;
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
-    z-index: 2;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 5rem; /* Bigger title */
+  font-weight: bold;
+  z-index: 2;
 }
 
-  .nav-left {
-    display: flex;
-    align-items: center;
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 55px; /* Slightly bigger */
+  width: auto;
+}
+
+.nav-center {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem; /* Increased */
+  font-weight: 700;
+  padding: 0.75rem 0;
+  transition: opacity 0.3s;
+  position: relative;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+.nav-link.active {
+  font-weight: 800;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+}
+
+.nav-right {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem; /* Increased */
+}
+
+.notification-icon {
+  width: 32px; /* Bigger */
+  height: 32px;
+  color: white;
+}
+
+.profile-button {
+  cursor: pointer;
+}
+
+.profile-circle {
+  width: 55px; /* Increased */
+  height: 55px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      padding: 1rem 1.5rem;
   }
-  
-  .nav-logo {
-    height: 40px;
-    width: auto;
-  }
-  
+
   .nav-center {
-    display: flex;
-    gap: 3rem;
+      gap: 2rem;
   }
-  
+
   .nav-link {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 0.5rem 0;
-    transition: opacity 0.3s;
-    position: relative;
+      font-size: 1.5rem; /* Bigger on smaller screens */
   }
-  
-  .nav-link:hover {
-    opacity: 0.8;
-  }
-  
-  .nav-link.active {
-    font-weight: 600;
-  }
-  
-  .nav-link.active::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: white;
-  }
-  
-  .nav-right {
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-  }
-  
-  .icon-button {
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    padding: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .notification-icon {
-    width: 24px;
-    height: 24px;
-    color: white;
-  }
-  
-  .profile-button {
-    cursor: pointer;
-  }
-  
+
   .profile-circle {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #e0e0e0;
+      width: 48px;
+      height: 48px;
   }
-  
-  @media (max-width: 768px) {
-    .navbar {
-      padding: 0.75rem 1rem;
-    }
-  
-    .nav-center {
-      gap: 1.5rem;
-    }
-  
-    .nav-link {
-      font-size: 1rem;
-    }
-    
-    .profile-circle {
-      width: 36px;
-      height: 36px;
-    }
+
+  .uic-content {
+      font-size: 4rem; /* Adjusted for smaller screens */
   }
-  
-  @media (max-width: 600px) {
-    .nav-center {
+}
+
+@media (max-width: 600px) {
+  .nav-center {
       display: none;
-    }
   }
+
+  .uic-content {
+      font-size: 3rem;
+  }
+}
