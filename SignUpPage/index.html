@@ -1,0 +1,45 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ITSO Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="signup-box">
+            <div class="logo">
+                <!-- Place your logo image link here -->
+                <img src="images/UICLogo.png" alt="UIC Logo">
+            </div>
+
+            <div class="title-wrapper">
+                <!-- Place your title image link here -->
+                <img src="images/UICITSO.png" alt="University of Immaculate Conception" class="title-image">
+            </div>
+
+            <form id="signupForm" onsubmit="handleSubmit(event)">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Please fill out this field." required>
+
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Please fill out this field." required>
+
+                <label for="email">Email Address (UIC Email Only)</label>
+                <input type="email" id="email" name="email" placeholder="Please fill out this field." required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Please fill out this field." required>
+
+                <div class="button-group">
+                    <button type="button" class="back-btn" onclick="goBack()">Back</button>
+                    <button type="submit" class="signup-btn">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
