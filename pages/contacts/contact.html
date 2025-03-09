@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contacts.css">
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <div class="app">
+    <div class="navbar">
+        <div>
+            <img src="/ITSO/images/UICLogo.png" alt="Logo" class="logo"> 
+        </div>
+        
+        <div class="nav-link">
+            <router-link to="/">Home</router-link>
+            <router-link to="/service">Service</router-link>
+            <router-link to="/policies">Policies</router-link>
+            <router-link to="/contact">Contact</router-link>
+        </div>
+        
+
+        <div class="notification">
+
+            <div><i class="fa fa-bell bell-icon"></i></div>
+            
+            <img src="/ITSO/images/blank.jpg" alt="Icon" class="icon"> 
+        </div>   
+                 
+    </div> 
+    <div class="contact-section">
+        <div class="overlay"></div>
+
+        <div class="contact-container">
+            <div class="contact-message">
+                    <h2>Contact Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </div>
+            <div class="contact-info-holder">
+                <div class="contact-info">
+                
+                    <div class="info-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>4671 Sugar Camp Road, Owatonna, Minnesota, 55060</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>561-456-2321</p>
+                        </div>
+                </div>
+
+                    <div class="info-box">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>example@email.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send Message</h3>
+                    <form>
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Type your message..." required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

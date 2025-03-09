@@ -26,6 +26,22 @@ body {
     font-weight: bold;
 }
 
+.logo-container {
+    position: absolute;  
+    top: 4%;
+    left: 20%;
+    z-index: 1;
+    transition: z-index 0.3s ease-in-out;
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    
+}
+
+.signup-card + .logo-container {
+    z-index: 1000;
+}
+
 .nav-links {
     display: flex;
     gap: 2rem;
