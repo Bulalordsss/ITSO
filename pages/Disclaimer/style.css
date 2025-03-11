@@ -1,0 +1,83 @@
+
+/* Reset and Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: #d63384; /* Pink */
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Main Container - Adjust the margin to position it */
+.container {
+    max-width: 600px;
+    width: 100%;
+   
+    text-align: center;
+    margin-top: 2px; /* Move down */
+    margin-left: 300px; /* Move right */
+}
+
+/* Back Button (Fixed Position) */
+.back-button {
+    position: fixed; /* Keeps the button at a fixed spot */
+    top: 20px; /* Adjust vertical position */
+    left: 20px; /* Adjust horizontal position */
+    width: 40px;
+    height: 40px;
+    border: 1px solid #f5a5c2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d63384;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Headings */
+h1, h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-decoration: underline;
+}
+
+h1 {
+    color: #f596c6; /* Pink */
+}
+
+/* Make the paragraph under "ITSO Privacy Statement" the same color */
+h1 + p {
+    color: #f596c6; /* Same pink as h1 */
+}
+
+h2 {
+    color: #b31b5e; /* Darker pink */
+}
+
+/* Paragraph */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+/* Agree Button */
+.agree-button {
+    background-color: #d63384; /* Pink */
+    color: white;
+    font-size: 16px;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.agree-button:hover {
+    background-color: #b31b5e; /* Darker pink on hover */
+}
