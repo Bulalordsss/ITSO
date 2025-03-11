@@ -223,10 +223,12 @@ select {
   opacity: 1;
 }
 
-/* Button Styles */
+/* Centering buttons and reducing spacing */
 .form-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Align vertically */
+  gap: 10px; /* Reduce spacing between buttons */
   margin-top: 30px;
 }
 
@@ -240,9 +242,8 @@ select {
 }
 
 .btn-back {
-  background-color: #f8f8f8;
-  color: #ff6b8a;
-  border: 1px solid #ff6b8a;
+  background-color: #ff6b8a;
+  color: white;
 }
 
 .btn-next {
