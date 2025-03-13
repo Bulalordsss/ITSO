@@ -1,0 +1,235 @@
+/* Main container */
+body, html{
+    background-color: white !important;
+  }
+  .form-container {
+    max-width: 48rem; /* Adjust width if needed */
+    padding: 1rem;
+    position: absolute; /* Use absolute for manual positioning */
+    top: 50%; /* Move to center vertically */
+    left: 50%; /* Move to center horizontally */
+    transform: translate(-50%, -50%); /* Center precisely */
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+  
+  /* Typography */
+  .form-title {
+    color: #f472b6;
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .section-title {
+    color: #374151;
+    margin-bottom: 1rem;
+  }
+  
+  .label {
+    color: #f472b6;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  /* Form elements */
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="date"]:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(244, 114, 182, 0.5);
+    border-color: #f472b6;
+  }
+  
+  /* Custom select styling */
+  .select-wrapper {
+    position: relative;
+  }
+  
+  .select-wrapper select {
+    appearance: none;
+    padding-right: 2rem;
+  }
+  
+  .select-wrapper::after {
+    content: "";
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.75rem;
+    height: 0.75rem;
+    border-right: 2px solid #f472b6;
+    border-bottom: 2px solid #f472b6;
+    pointer-events: none;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  
+  /* Custom radio buttons */
+  .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    background-color: white;
+  }
+  
+  .radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .radio-label input[type="radio"] {
+    display: none;
+  }
+  
+  .radio-custom {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid #d1d5db;
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .radio-label input[type="radio"]:checked + .radio-custom {
+    background-color: #f472b6;
+  }
+  
+  .radio-custom-inner {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
+  }
+  
+  .radio-label input[type="radio"]:checked + .radio-custom .radio-custom-inner {
+    display: block;
+  }
+  
+  /* Custom checkbox */
+  input[type="checkbox"] {
+    accent-color: #f472b6;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 0.375rem 1.5rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-primary {
+    background-color: #f472b6;
+    color: white;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #db2777;
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    color: #f472b6;
+    border: 1px solid #f472b6;
+  }
+  
+  .btn-outline:hover {
+    background-color: #fdf2f8;
+  }
+  
+  /* Layout utilities */
+  .section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-row {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  /* Date picker styling */
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(300deg);
+  }
+  
+  /* Textarea */
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  /* Document attachment */
+  .document-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    background-color: white;
+  }
+  
+  .document-name {
+    display: flex;
+    align-items: center;
+    color: #f472b6;
+  }
+  
+  .document-icon {
+    margin-right: 0.5rem;
+  }
+  
